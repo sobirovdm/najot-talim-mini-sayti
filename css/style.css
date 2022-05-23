@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #021823;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.theme-controls {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.theme-controls button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: #021823;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #021823;
+}
+
+.dark-mode .theme-controls button {
+    color: #fff;
+    background-color: #222;
+    border: 1px solid #fff;
+}
+
+.theme-controls button+button {
+    margin-left: 10px;
+}
+
+.site-header {
+    padding: 30px;
+    text-align: center;
+}
+
+.site-header .logo {
+    width: 200px;
+    height: 200px;
+    /*     border: 3px solid #BB8D5A; */
+    border-radius: 50%;
+    box-shadow: 4px 4px 50px 0px rgba(2, 24, 35, 0.2);
+    vertical-align: center;
+}
+
+.site-header-title {
+    margin-bottom: 5px;
+}
+
+.promo-video {
+    text-align: center;
+}
+
+.courses-contacts {
+    display: flex;
+}
+
+.courses,
+.contacts {
+    width: 50%;
+}
+
+.courses h2,
+.contacts h2 {
+    padding-left: 25px;
+}
+
+.courses-list li,
+.contacts-list li {
+    margin-bottom: 5px;
+}
+
+.contacts-list a {
+    color: #021823;
+    display: inline-block;
+    border-bottom: 2px solid gold;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.contacts-list a:hover {
+    background-color: gold;
+}
+
+.dark-mode .contacts-list a {
+    color: #fff;
+}
+
+.dark-mode .contacts-list a:hover {
+    color: #021823;
+}
+
+.map-title {
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    border: 1px solid #021823;
+}
